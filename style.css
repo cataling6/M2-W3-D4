@@ -1,5 +1,6 @@
+/*STILE APPLICATO DI DEFAULT, PIU SOTTO LE CLASSI USATE DAL JS*/
 body {
-  font-size: small;
+  font-size: 20px;
   font-weight: 100;
   height: 900px;
   width: 80%;
@@ -29,10 +30,20 @@ footer {
   width: 100%;
 }
 span {
-  font-size: 12px;
+  font-size: 10px;
   vertical-align: super;
 }
 
+.text {
+  font-size: medium;
+  font-weight: bold;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+/*CLASSI USATE DAL CSS*/
 .classeLink {
   color: aquamarine;
   text-decoration: none;
@@ -44,7 +55,6 @@ span {
   transition: 0.5s;
 }
 
-.text {
-  font-size: medium;
-  font-weight: bold;
+.editImg {
+  visibility: hidden;
 }

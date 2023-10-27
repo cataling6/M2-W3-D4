@@ -26,10 +26,30 @@ function changeClassAmazon() {
   }
 }
 
-function () {
-  
+function addImgClass() {
+  const img = document.querySelectorAll("tr img");
+  for (let i = 0; i < img.length; i++) {
+    img[i].classList.toggle("editImg");
+  }
+}
+
+function changeColor() {
+  const title = document.querySelectorAll("tbody p");
+  for (let i = 0; i < title.length; i++) {
+    title[i].style.color =
+      "rgb(" +
+      Math.floor(Math.random() * 255) +
+      ", " +
+      Math.floor(Math.random() * 255) +
+      ", " +
+      Math.floor(Math.random() * 255) +
+      ")";
+  }
+  console.log(red);
 }
 changeH1();
 changeBg();
 changeAddress();
 changeClassAmazon();
+
+changeColor();
