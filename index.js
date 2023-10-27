@@ -18,9 +18,18 @@ function changeAddress() {
 }
 
 function changeClassAmazon() {
-  //document.querySelectorAll("a").style.
+  const amazon = document.querySelectorAll("table a");
+  for (let i = 0; i < amazon.length; i++) {
+    if (amazon[i].href) {
+      amazon[i].classList.add("classeLink");
+    }
+  }
 }
 
+function () {
+  
+}
 changeH1();
 changeBg();
 changeAddress();
+changeClassAmazon();
