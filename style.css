@@ -6,7 +6,6 @@ body {
   width: 80%;
   margin-left: auto;
   margin-right: auto;
-  position: relative;
 }
 
 img {
@@ -23,7 +22,6 @@ td {
 }
 
 footer {
-  position: absolute;
   bottom: 0;
   left: 0;
   text-align: center;
@@ -39,8 +37,16 @@ span {
   font-weight: bold;
 }
 .form {
+  width: 250px;
   display: flex;
+  gap: 5px;
   flex-direction: column;
+}
+.form2 {
+  display: flex;
+}
+.descrizione {
+  font-size: small;
 }
 
 /*CLASSI USATE DAL CSS*/

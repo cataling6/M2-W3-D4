@@ -1,5 +1,5 @@
 function changeH1() {
-  document.querySelector("h1").innerText = "ahahah ma sei bravo";
+  document.querySelector("h1").innerText = "Titolo Rotto";
 }
 
 function changeBg() {
@@ -45,11 +45,31 @@ function changeColor() {
       Math.floor(Math.random() * 255) +
       ")";
   }
-  console.log(red);
 }
+
 changeH1();
 changeBg();
 changeAddress();
 changeClassAmazon();
-
 changeColor();
+
+/*:::::::::::::::::::::::::EXTRA::::::::::::::::::::::::::::*/
+
+function effettiIn(obj) {
+  let immagine = document.querySelector("#" + obj.id);
+  immagine.style.transform = "rotatey(180deg)";
+  immagine.style.transition = "0.5s";
+  immagine.style.borderRadius = "40px";
+}
+
+function effettiOut(obj) {
+  let immagine = document.querySelector("#" + obj.id);
+  immagine.style.transform = "rotatey(0deg)";
+  immagine.style.transition = "0.5s";
+  immagine.style.borderRadius = "0px";
+}
+
+function cliccami(obj) {
+  document.querySelector("#selected").value = obj.alt;
+  let immagine = document.querySelector("#" + obj.id);
+}
