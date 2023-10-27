@@ -1,0 +1,11 @@
+img {
+  width: 200px;
+}
+
+main,
+h1,
+footer,
+header {
+  display: flex;
+  justify-content: center;
+}
