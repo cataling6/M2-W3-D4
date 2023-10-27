@@ -1,11 +1,26 @@
+body {
+  height: 700px;
+  position: relative;
+}
 img {
   width: 200px;
 }
 
+table td {
+  border: 15px solid transparent;
+}
 main,
 h1,
-footer,
 header {
   display: flex;
+  flex-direction: row;
   justify-content: center;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  width: 100%;
 }
